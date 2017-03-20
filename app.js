@@ -7,7 +7,9 @@ var config = require('./config');
 
 var app = express();
 
-mongoose.connect('mongodb://' + config.db.host + '/' + config.db.name);
+var port = process.env.PORT || 3000;
+
+mongoose.connect(`mongodb://${config.db.user}:${config.db.password}@${config.db.host}:${config.db.port}/${config.db.name}`)
 var Url = require('./models/urls');
 
 app.use(bodyParser.json());
@@ -57,6 +59,6 @@ app.get('/:encodedId', function(req, res) {
   });
 });
 
-var server = app.listen(3000, function() {
+var server = app.listen(port, function() {
   console.log('Server started on port 3000');
 });

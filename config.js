@@ -1,7 +1,10 @@
 var config = {
-  webhost: 'http://localhost:3000/',
+  webhost: 'http://awesome-url-shortener.herokuapp.com/',
   db: {
-    host: 'localhost',
+    user: 'boopesh',
+    password: 'hello123',
+    host: 'ds137220.mlab.com',
+    port: '37220',
     name: 'url_shortener'
   }
 };
