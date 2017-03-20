@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Url Shortener</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Url shortener</h1>
+    <form id="url-form">
+      <div class="input-group">
+        <input id="longUrl" type="url" class="form-control" placeholder="Enter a url">
+        <div class="input-group-btn">
+          <button class="btn btn-primary" type="submit"> Shorten </button>
+        </div>
+      </div>
+    </form>
+    <br>
+    <div id="shortened-url">
+
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="javascript/shorten.js"></script>
+</body>
+</html>
