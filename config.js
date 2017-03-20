@@ -1,5 +1,5 @@
 var config = {
-  webhost: 'http://awesome-url-shortener.herokuapp.com/',
+  webhost: '//awesome-url-shortener.herokuapp.com/',
   db: {
     user: 'boopesh',
     password: 'hello123',
